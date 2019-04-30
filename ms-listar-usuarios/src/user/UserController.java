@@ -6,7 +6,7 @@ import io.javalin.Handler;
 public class UserController {
     public static Handler fetchAllUsernames = ctx -> {
         UserDao dao = UserDao.instance();
-        Iterable<String> allUsers = dao.getAllUsernames();
+        Iterable<User> allUsers = dao.getAllUsernames();
         ctx.json(allUsers);
     };
  
