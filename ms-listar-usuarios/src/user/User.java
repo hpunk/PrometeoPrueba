@@ -2,10 +2,12 @@ package user;
 
 public class User {
     public final int id;
-    public final String name;
+    public final String nombre;
+    public final String carrera;
  
-    public User(int id, String name) {
+    public User(int id, String nombre, String carrera) {
     	this.id = id;
-    	this.name = name;
+    	this.nombre = nombre;
+    	this.carrera = carrera;
     }
 }
